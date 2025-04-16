@@ -166,6 +166,7 @@ export const AddMachineForm = ({
               power_type: values.power_type as PowerType["name"],
               pxe_mac: values.pxe_mac,
               zone: { name: values.zone },
+              is_dpu: { name: values.is_dpu },
               // TODO: Add `is_dpu` field to params https://warthogs.atlassian.net/browse/MAASENG-4186
             };
             dispatch(machineActions.create(params));

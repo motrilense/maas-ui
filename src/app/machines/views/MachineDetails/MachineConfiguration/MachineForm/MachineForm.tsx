@@ -85,6 +85,7 @@ const MachineForm = ({ systemId }: Props): React.ReactElement | null => {
                 pool: { name: values.pool },
                 system_id: machine.system_id,
                 zone: { name: values.zone },
+                is_dpu: { name: values.is_dpu },
                 // TODO: add "is_dpu" here https://warthogs.atlassian.net/browse/MAASENG-4190
               };
               dispatch(machineActions.update(params));
